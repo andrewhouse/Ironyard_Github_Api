@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Github name:</strong>
+  <%= @student.github_name %>
+</p>
+
+<p>
+  <strong>Repository:</strong>
+  <%= @student.repository %>
+</p>
+
+<p>
+  <strong>Last commit:</strong>
+  <%= @student.last_commit %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
